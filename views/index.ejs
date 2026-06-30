@@ -1,15 +1,65 @@
-<h1>My Blog</h1>
-<link rel="stylesheet" href="/css/style.css">
-<a href="/create">New Post</a>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InkFlow</title>
+
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+<nav>
+    <div class="logo">InkFlow</div>
+
+    <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/create">Create Post</a></li>
+    </ul>
+</nav>
+
+<section class="hero">
+    <h1>Welcome to InkFlow</h1>
+    <p>Share your ideas with the world.</p>
+
+    <a href="/create" class="btn">Create Blog</a>
+</section>
+
+<div class="container">
 
 <% posts.forEach(post => { %>
 
-<div>
+<div class="post-card">
 
-  <h2><%= post.title %></h2>
+    <h2><%= post.title %></h2>
 
-  <p><%= post.content %></p>
+    <p><%= post.content %></p>
+
+    <div class="actions">
+
+        <a class="edit-btn" href="/edit/<%= post.id %>">
+            Edit
+        </a>
+
+        <form action="/delete/<%= post.id %>" method="POST">
+
+            <button class="delete-btn">
+                Delete
+            </button>
+
+        </form>
+
+    </div>
 
 </div>
 
 <% }) %>
+
+</div>
+
+<footer>
+    © 2026 InkFlow • Built with Node.js & Express
+</footer>
+
+</body>
+</html>

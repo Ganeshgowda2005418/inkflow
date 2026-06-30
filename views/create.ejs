@@ -1,19 +1,46 @@
-<form action="/create" method="POST">
-<link rel="stylesheet" href="/css/style.css">
-    <input
-      type="text"
-      name="title"
-      placeholder="Title"
-      required>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Blog</title>
 
-    <textarea
-      name="content"
-      placeholder="Write blog..."
-      required>
-    </textarea>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
 
-    <button type="submit">
-      Publish
-    </button>
+<nav>
+    <div class="logo">InkFlow</div>
 
-</form>
+    <ul>
+        <li><a href="/">Home</a></li>
+    </ul>
+</nav>
+
+<div class="form-container">
+
+    <h1>Create New Blog</h1>
+
+    <form action="/create" method="POST">
+
+        <input
+            type="text"
+            name="title"
+            placeholder="Enter Title"
+            required>
+
+        <textarea
+            name="content"
+            placeholder="Write your blog..."
+            required></textarea>
+
+        <button type="submit">
+            Publish Blog
+        </button>
+
+    </form>
+
+</div>
+
+</body>
+</html>
