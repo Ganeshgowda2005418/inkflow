@@ -30,14 +30,15 @@ A modern blog platform built with Node.js, Express.js, and EJS that allows users
 
 ## 📸 Screenshots
 
-Add screenshots of the following pages:
 
-* Landing Page
-* Blog Feed
-* Create New Article
-* Edit Article
-* Delete Confirmation
-* Mobile Responsive View
+
+* Home Page
+<img width="1872" height="843" alt="image" src="https://github.com/user-attachments/assets/2e1e15da-ed0d-4b68-833f-84ff5c42694d" />
+
+* Create Post page
+<img width="1890" height="833" alt="image" src="https://github.com/user-attachments/assets/91945999-a246-441b-89f8-1d765deab51c" />
+* Edit Post page
+<img width="1887" height="920" alt="image" src="https://github.com/user-attachments/assets/c9896c8f-9d3b-42d0-a7ad-d32fee97cc09" />
 
 ---
 
@@ -74,12 +75,8 @@ npm install
 node app.js
 ```
 
-Open your browser and visit:
-
-```text
-http://localhost:3000
-```
-
+## 🌐 Live Demo
+https://inkflow-xejq.onrender.com/
 ---
 
 ## 🎯 Future Enhancements
